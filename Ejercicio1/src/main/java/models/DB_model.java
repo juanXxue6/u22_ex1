@@ -16,6 +16,8 @@ public class DB_model {
 
 	private static Connection conexion;
 	public static  String cadenaConexion;
+	public static  String username;
+	public static  String password;
 	//"jdbc:mysql://192.168.1.190:3306","remote","Saraysofia2010*"
 	
 	public static void main(String[] args) {
@@ -23,8 +25,10 @@ public class DB_model {
 		startConnection();
 	}
 	
-	public DB_model(String cadenaConexion) {
+	public DB_model(String cadenaConexion, String username, String password) {
 		this.cadenaConexion = cadenaConexion;
+		this.username = username;
+		this.password = password;
 	}
 	
 	public static  void startConnection() {
