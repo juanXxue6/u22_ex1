@@ -4,8 +4,6 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
 public class VistaMostrar extends JFrame {
 	private static final long serialVersionUID = 1L;
