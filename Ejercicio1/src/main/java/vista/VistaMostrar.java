@@ -2,20 +2,26 @@ package vista;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
+import javax.swing.JScrollPane;
 import javax.swing.SwingConstants;
+import javax.swing.JTextField;
 
 public class VistaMostrar extends JFrame {
 	private static final long serialVersionUID = 1L;
-	public JLabel lresultado;
+	public JTextField lresultado;
+	public JScrollPane scroll;
 	public JButton bmuestratodo,bnombre,bapellido,bdireccion,bdni,bfecha;
 	
 	public VistaMostrar() {
 		getContentPane().setLayout(null);
 		
-		lresultado=new JLabel("Resultados");
+		lresultado=new JTextField("Resultados");
+		lresultado.setEditable(false);
 		lresultado.setHorizontalAlignment(SwingConstants.CENTER);
 		lresultado.setBounds(10,11, 414,117);
+		
+		scroll= new JScrollPane(lresultado);
+		scroll.setBounds(10,11, 414,117);
 		
 		bmuestratodo= new JButton("Muestra Todo");
 		bmuestratodo.setBounds(29, 139, 117, 50);
@@ -31,8 +37,9 @@ public class VistaMostrar extends JFrame {
 		
 		bfecha= new JButton("Muestra Fecha");
 		bfecha.setBounds(235, 200, 117, 50);
-		
-		getContentPane().add(lresultado);
+
+
+		getContentPane().add(scroll);
 		getContentPane().add(bmuestratodo);
 		getContentPane().add(bnombre);
 		getContentPane().add(bapellido);
