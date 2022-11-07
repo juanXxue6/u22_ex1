@@ -26,10 +26,6 @@ public class VistaMostrar extends JFrame {
 		bnombre.setBounds(156, 139, 117, 50);
 		
 		bapellido= new JButton("Muestra Apellidos");
-		bapellido.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			}
-		});
 		bapellido.setBounds(283, 139, 117, 50);
 		
 		bdni= new JButton("Muestra DNI");
