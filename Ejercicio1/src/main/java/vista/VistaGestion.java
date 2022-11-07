@@ -76,5 +76,10 @@ public class VistaGestion extends JFrame {
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setBounds(155, 37, 137, 14);
 		getContentPane().add(lblNewLabel);
+		
+		bguarda= new JButton("Guarda");
+		bguarda.setBounds(175, 217, 86, 20);
+		getContentPane().add(bguarda);
+		
 	}
 }
