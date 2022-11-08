@@ -1,3 +1,4 @@
+
 package vista;
 
 import javax.swing.JButton;
@@ -11,9 +12,11 @@ public class VistaCliente extends JFrame {
 	public JLabel escoge;
 	
 	public VistaCliente() {
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 600, 600);
 		getContentPane().setLayout(null);
-		
-		
+	
 		
 		escoge= new JLabel("Escoge una opción");
 		escoge.setBounds(171, 75, 95, 20);
@@ -30,3 +33,4 @@ public class VistaCliente extends JFrame {
 	}
 	
 }
+

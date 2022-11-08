@@ -1,3 +1,4 @@
+
 package vista;
 
 import javax.swing.JButton;
@@ -14,6 +15,9 @@ public class VistaMostrar extends JFrame {
 	
 	public VistaMostrar() {
 		getContentPane().setLayout(null);
+		
+
+		setBounds(100, 100, 600, 600);
 		
 		lresultado=new JTextField("Resultados");
 		lresultado.setEditable(false);

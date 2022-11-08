@@ -1,3 +1,4 @@
+
 package vista;
 
 import javax.swing.JButton;
@@ -16,6 +17,9 @@ public class VistaGestion extends JFrame {
 	
 	public VistaGestion() {
 		getContentPane().setLayout(null);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 600, 600);
+		
 		
 		lnombre=new JLabel("Nombre:");
 		lnombre.setLayout(null);
