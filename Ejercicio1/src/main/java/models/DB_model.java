@@ -8,7 +8,6 @@ import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import com.mysql.cj.MysqlConnection;
 
 public class DB_model {
 
@@ -64,7 +63,7 @@ public class DB_model {
 			
 		} catch (SQLException e) {
 			//System.err.println(e);
-			Logger.getLogger(MysqlConnection.class.getName()).log(Level.SEVERE, null, e);
+			Logger.getLogger(DB_model.class.getName()).log(Level.SEVERE, null, e);
 	
 		}
 	}
@@ -88,7 +87,7 @@ System.out.println(query);
 			
 			
 		} catch (SQLException e) {
-			Logger.getLogger(MysqlConnection.class.getName()).log(Level.SEVERE, null, e);
+			Logger.getLogger(DB_model.class.getName()).log(Level.SEVERE, null, e);
 		}
 		
 		
@@ -116,7 +115,7 @@ System.out.println(query);
 		return resultSet;
 		
 		}catch (SQLException e) {
-			Logger.getLogger(MysqlConnection.class.getName()).log(Level.SEVERE, null, e);
+			Logger.getLogger(DB_model.class.getName()).log(Level.SEVERE, null, e);
 			return null;
 		}
 
@@ -131,7 +130,7 @@ System.out.println(query);
 			st.executeUpdate(query);
 			
 		} catch (SQLException e) {
-			Logger.getLogger(MysqlConnection.class.getName()).log(Level.SEVERE, null, e);
+			Logger.getLogger(DB_model.class.getName()).log(Level.SEVERE, null, e);
 		}
 	}
 	
@@ -152,7 +151,7 @@ System.out.println(query);
 			st.executeUpdate(query);
 			
 		} catch (SQLException e) {
-			Logger.getLogger(MysqlConnection.class.getName()).log(Level.SEVERE, null, e);
+			Logger.getLogger(DB_model.class.getName()).log(Level.SEVERE, null, e);
 		}
 	}
 	
