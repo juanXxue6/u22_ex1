@@ -1,5 +1,6 @@
 package controllers;
 
+
 import java.awt.EventQueue;
 import java.awt.HeadlessException;
 import java.awt.event.ActionEvent;
@@ -16,9 +17,11 @@ import vista.VistaCliente;
 import vista.VistaGestion;
 import vista.VistaMostrar;
 
+
 public class Controlador implements ActionListener {
 
 	private DB_model modelo;
+
 	private VistaGestion vistaGestion;
 	private VistaCliente vistaCliente;
 	private VistaMostrar vistaMostrar;
@@ -212,6 +215,7 @@ public class Controlador implements ActionListener {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
+
 	}
 
 }

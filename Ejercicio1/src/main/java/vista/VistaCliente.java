@@ -1,3 +1,4 @@
+
 package vista;
 
 import javax.swing.JButton;
@@ -32,3 +33,4 @@ public class VistaCliente extends JFrame {
 	}
 	
 }
+
