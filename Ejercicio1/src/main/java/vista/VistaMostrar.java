@@ -11,7 +11,8 @@ public class VistaMostrar extends JFrame {
 	private static final long serialVersionUID = 1L;
 	public JTextField lresultado;
 	public JScrollPane scroll;
-	public JButton bmuestratodo,bnombre,bapellido,bdireccion,bdni,bfecha;
+	public JButton bmuestratodo,bnombre,bapellido,bdireccion,bdni,bfecha,batras;
+	private JButton btnNewButton;
 	
 	public VistaMostrar() {
 		getContentPane().setLayout(null);
@@ -42,6 +43,8 @@ public class VistaMostrar extends JFrame {
 		bfecha= new JButton("Muestra Fecha");
 		bfecha.setBounds(235, 200, 117, 50);
 
+		batras = new JButton("<");
+		batras.setBounds(29, 271, 40, 40);
 
 		getContentPane().add(scroll);
 		getContentPane().add(bmuestratodo);
@@ -49,6 +52,7 @@ public class VistaMostrar extends JFrame {
 		getContentPane().add(bapellido);
 		getContentPane().add(bdni);
 		getContentPane().add(bfecha);
+		getContentPane().add(batras);
 		
 	}
 

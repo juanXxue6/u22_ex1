@@ -54,6 +54,7 @@ public class Controlador implements ActionListener {
 		
 		//listener de los botones de la vista Gestion
 		vistaGestion.bguarda.addActionListener(this);
+		vistaGestion.batras.addActionListener(this);
 		
 		//listener de los botones de la vista Mostrar
 		vistaMostrar.bapellido.addActionListener(this);
@@ -62,6 +63,7 @@ public class Controlador implements ActionListener {
 		vistaMostrar.bnombre.addActionListener(this);
 		vistaMostrar.bmuestratodo.addActionListener(this);
 		vistaMostrar.bfecha.addActionListener(this);
+		vistaMostrar.batras.addActionListener(this);
 		
 		modelo.startConnection();
 		modelo.useDB("ud22_1");
@@ -116,7 +118,7 @@ public class Controlador implements ActionListener {
 			datos[1] = vistaGestion.tapellido.getText();
 			datos[2] = vistaGestion.tdireccion.getText();
 			datos[3] = vistaGestion.tdni.getText();
-			datos[4] = null;
+			datos[4] = "STR_TO_DATE('"+vistaGestion.tfecha.getText()+"', '%d/%m/%Y')";
 			
 
 			subQueryWhere = " where " +  campos[3] +  " = " + datos[3];
@@ -158,9 +160,11 @@ public class Controlador implements ActionListener {
 				}
 			
 			
+			
+			
+			
+		}else if(vistaGestion.batras == e.getSource()) {
 			iniciarVistaCliente();
-			
-			
 			
 			//botones de vista mostrar
 		}else if(vistaMostrar.bnombre == e.getSource()) {
@@ -185,6 +189,10 @@ public class Controlador implements ActionListener {
 		
 		else if(vistaMostrar.bfecha == e.getSource()) {
 			showData(campos[4],null);
+		}
+		
+		else if(vistaMostrar.batras == e.getSource()) {
+			iniciarVistaCliente();
 		}
 
 		

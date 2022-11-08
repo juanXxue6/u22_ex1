@@ -13,7 +13,7 @@ public class VistaGestion extends JFrame {
 	private static final long serialVersionUID = 1L;
 	public JLabel lnombre,lapellido,ldireccion,ldni,lfecha;
 	public JTextField tnombre,tapellido,tdireccion,tdni,tfecha;
-	public JButton bguarda;
+	public JButton bguarda,batras;
 	
 	public VistaGestion() {
 		getContentPane().setLayout(null);
@@ -84,6 +84,10 @@ public class VistaGestion extends JFrame {
 		bguarda= new JButton("Guarda");
 		bguarda.setBounds(175, 217, 86, 20);
 		getContentPane().add(bguarda);
+		
+		batras = new JButton("<");
+		batras.setBounds(16, 253, 40, 40);
+		getContentPane().add(batras);
 		
 	}
 }
