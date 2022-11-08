@@ -116,7 +116,7 @@ public class Controlador implements ActionListener {
 			datos[4] = null;
 			
 
-			subQueryWhere = "where " +  campos[3] +  " = " + datos[3];
+			subQueryWhere = " where " +  campos[3] +  " = " + datos[3];
 			resultSet = modelo.getData("cliente", "dni", subQueryWhere);
 			
 
